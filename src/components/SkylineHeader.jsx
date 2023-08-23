@@ -42,7 +42,8 @@ const SkylineHeader = () => {
       >
         {skylineData.skyline_banner.map((banner, index) => (
           <div key={index}>
-            <p onClick={() => handleShow(banner.seeDetailsText)} >{banner.promotionTitle}</p>
+            <p >{banner.promotionTitle}</p>
+            <p onClick={() => handleShow(banner.seeDetailsText)} >See details</p>
           </div>
         ))}
       </Carousel>
@@ -54,7 +55,7 @@ const SkylineHeader = () => {
         </Modal.Header>
         <Modal.Body>
           {popupData && (
-            <p>Data received: {popupData}</p>
+            <p>{popupData}</p>
           )}
         </Modal.Body>
         {/* <Modal.Footer>
