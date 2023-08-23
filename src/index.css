@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* index.css */
+
+/* Styling for the overlay */
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6); /* Grey with some transparency */
+}
+
+/* Styling for the modal */
+.modal-content {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Centering the modal vertically */
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0; /* Remove margin to center the modal */
+}
+
+/* Optional: Adjusting modal width */
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px; /* Adjust this value as needed */
+  }
+}
