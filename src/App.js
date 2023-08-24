@@ -1,11 +1,20 @@
-import SkylineHeader from './components/SkylineHeader';
+// import SkylineHeader from "./Components/Shared/SkylineHeader/SkylineHeader";
+import Header from "./Components/Shared/Header/Header";
+
+import Routes from "./Routes/Routes.jsx";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <SkylineHeader></SkylineHeader>
-    
-    </div>
+    <>
+      {/* <SkylineHeader/> */}
+      <Header />
+      <Router>
+        <div className="App">
+          <Routes />
+        </div>
+      </Router>
+    </>
   );
 }
 
